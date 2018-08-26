@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -85,211 +85,6 @@
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "../drawbotics-button/docs/Spacer.jsx":
-/*!********************************************!*\
-  !*** ../drawbotics-button/docs/Spacer.jsx ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var styles = {
-  spacer: {
-    display: 'flex'
-  },
-  box: {}
-};
-
-var Spacer = function Spacer(_ref) {
-  var children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: styles.spacer
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.map(children, function (child, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      style: _objectSpread({}, styles.box, {
-        margin: i === 0 ? '0 16px 0 0' : '0 16px'
-      })
-    }, child);
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Spacer);
-Spacer.__docgenInfo = {
-  "description": "",
-  "methods": [],
-  "displayName": "Spacer"
-};
-
-/***/ }),
-
-/***/ "../drawbotics-button/docs/button.mdx":
-/*!********************************************!*\
-  !*** ../drawbotics-button/docs/button.mdx ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/tag */ "./node_modules/@mdx-js/tag/dist/index.js");
-/* harmony import */ var _mdx_js_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-display-window/lib/components */ "./lib/components/index.js");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-helmet */ "../drawbotics-button/node_modules/react-helmet/lib/Helmet.js");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src */ "../drawbotics-button/src/index.js");
-/* harmony import */ var _Spacer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Spacer */ "../drawbotics-button/docs/Spacer.jsx");
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var components = _ref.components,
-      props = _objectWithoutProperties(_ref, ["components"]);
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "wrapper",
-    components: components
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_3__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Drawbotics Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    href: "https://s3-eu-west-1.amazonaws.com/drawbotics-cdn/ittsu/dev/ittsu.styles.css",
-    rel: "stylesheet"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h1",
-    components: components,
-    props: {
-      "id": "drawbotics-button"
-    }
-  }, "Drawbotics Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus tempus ipsum, a porttitor ipsum interdum non. Nam erat libero, molestie a ligula sit amet, maximus dictum est. Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius. Sed posuere accumsan vestibulum. In hac habitasse platea dictumst. Nunc hendrerit nisi a arcu consectetur finibus."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h2",
-    components: components,
-    props: {
-      "id": "table-of-content"
-    }
-  }, "Table Of Content"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["Toc"], {
-    __entries: [{
-      "title": "Drawbotics Button",
-      "url": "drawbotics-button"
-    }, {
-      "entries": [{
-        "title": "Table Of Content",
-        "url": "table-of-content"
-      }, {
-        "title": "Installation",
-        "url": "installation"
-      }, {
-        "title": "Example",
-        "url": "example"
-      }, {
-        "title": "Props",
-        "url": "props"
-      }, {
-        "entries": [{
-          "title": "Table",
-          "url": "table"
-        }, {
-          "title": "Knobs",
-          "url": "knobs"
-        }]
-      }]
-    }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h2",
-    components: components,
-    props: {
-      "id": "installation"
-    }
-  }, "Installation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "pre",
-    components: components
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": "language-bash"
-    }
-  }, "$ npm install @drawbotics/button\n")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h2",
-    components: components,
-    props: {
-      "id": "example"
-    }
-  }, "Example"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Duis scelerisque, massa nec iaculis malesuada, ligula arcu tempus nulla, nec ultricies massa enim ac risus. Curabitur rhoncus ipsum vel est posuere, finibus mattis neque vulputate."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["PlayGround"], {
-    __position: 2,
-    __code: "<Spacer>\n  <Button category=\"primary\">\n    My button\n  </Button>\n  <Button category=\"danger\" round>\n    My button\n  </Button>\n  <Button category=\"success\" variation=\"inversed\">\n    My button\n  </Button>\n  <Button category=\"warning\" variation=\"inversed\" round>\n    My button\n  </Button>\n</Spacer>"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Spacer__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    category: "primary"
-  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    category: "danger",
-    round: true
-  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    category: "success",
-    variation: "inversed"
-  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    category: "warning",
-    variation: "inversed",
-    round: true
-  }, "My button"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h2",
-    components: components,
-    props: {
-      "id": "props"
-    }
-  }, "Props"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Nullam mattis, diam ut convallis dictum, ipsum tellus tincidunt enim, non elementum libero arcu vel orci. Nam bibendum venenatis mi, in pulvinar lectus lobortis fermentum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h3",
-    components: components,
-    props: {
-      "id": "table"
-    }
-  }, "Table"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Phasellus in consectetur leo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["PropsTable"], {
-    component: _src__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "h3",
-    components: components,
-    props: {
-      "id": "knobs"
-    }
-  }, "Knobs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
-    name: "p",
-    components: components
-  }, "Phasellus in consectetur leo. Curabitur vel turpis porta, faucibus ante a, aliquam nisi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["Knobs"], {
-    component: _src__WEBPACK_IMPORTED_MODULE_4__["default"],
-    defaults: {
-      category: 'primary'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src__WEBPACK_IMPORTED_MODULE_4__["default"], null, "My button")));
-});
-
-/***/ }),
 
 /***/ "../drawbotics-button/node_modules/exenv/index.js":
 /*!********************************************************!*\
@@ -1626,18 +1421,208 @@ Button.__docgenInfo = {
 
 /***/ }),
 
-/***/ "../drawbotics-button/src/index.js":
-/*!*****************************************!*\
-  !*** ../drawbotics-button/src/index.js ***!
-  \*****************************************/
+/***/ "../drawbotics-button/src/docs/Spacer.jsx":
+/*!************************************************!*\
+  !*** ../drawbotics-button/src/docs/Spacer.jsx ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Button */ "../drawbotics-button/src/components/Button.jsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-/* harmony default export */ __webpack_exports__["default"] = (_components_Button__WEBPACK_IMPORTED_MODULE_0__["default"]);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+var styles = {
+  spacer: {
+    display: 'flex'
+  },
+  box: {}
+};
+
+var Spacer = function Spacer(_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: styles.spacer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.map(children, function (child, i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: _objectSpread({}, styles.box, {
+        margin: i === 0 ? '0 16px 0 0' : '0 16px'
+      })
+    }, child);
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Spacer);
+Spacer.__docgenInfo = {
+  "description": "",
+  "methods": [],
+  "displayName": "Spacer"
+};
+
+/***/ }),
+
+/***/ "../drawbotics-button/src/docs/button.mdx":
+/*!************************************************!*\
+  !*** ../drawbotics-button/src/docs/button.mdx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/tag */ "./node_modules/@mdx-js/tag/dist/index.js");
+/* harmony import */ var _mdx_js_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-display-window/lib/components */ "./lib/components/index.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-helmet */ "../drawbotics-button/node_modules/react-helmet/lib/Helmet.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Button */ "../drawbotics-button/src/components/Button.jsx");
+/* harmony import */ var _Spacer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Spacer */ "../drawbotics-button/src/docs/Spacer.jsx");
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, ["components"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "wrapper",
+    components: components
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_3__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Drawbotics Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    href: "https://s3-eu-west-1.amazonaws.com/drawbotics-cdn/ittsu/dev/ittsu.styles.css",
+    rel: "stylesheet"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h1",
+    components: components,
+    props: {
+      "id": "drawbotics-button"
+    }
+  }, "Drawbotics Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus tempus ipsum, a porttitor ipsum interdum non. Nam erat libero, molestie a ligula sit amet, maximus dictum est. Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius. Sed posuere accumsan vestibulum. In hac habitasse platea dictumst. Nunc hendrerit nisi a arcu consectetur finibus."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h2",
+    components: components,
+    props: {
+      "id": "table-of-content"
+    }
+  }, "Table Of Content"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["Toc"], {
+    __entries: [{
+      "title": "Drawbotics Button",
+      "url": "drawbotics-button"
+    }, {
+      "entries": [{
+        "title": "Table Of Content",
+        "url": "table-of-content"
+      }, {
+        "title": "Installation",
+        "url": "installation"
+      }, {
+        "title": "Example",
+        "url": "example"
+      }, {
+        "title": "Props",
+        "url": "props"
+      }, {
+        "entries": [{
+          "title": "Table",
+          "url": "table"
+        }, {
+          "title": "Knobs",
+          "url": "knobs"
+        }]
+      }]
+    }]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h2",
+    components: components,
+    props: {
+      "id": "installation"
+    }
+  }, "Installation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "pre",
+    components: components
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "code",
+    components: components,
+    parentName: "pre",
+    props: {
+      "className": "language-bash"
+    }
+  }, "$ npm install @drawbotics/button\n")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h2",
+    components: components,
+    props: {
+      "id": "example"
+    }
+  }, "Example"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Duis scelerisque, massa nec iaculis malesuada, ligula arcu tempus nulla, nec ultricies massa enim ac risus. Curabitur rhoncus ipsum vel est posuere, finibus mattis neque vulputate."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["PlayGround"], {
+    __position: 2,
+    __code: "<Spacer>\n  <Button category=\"primary\">\n    My button\n  </Button>\n  <Button category=\"danger\" round>\n    My button\n  </Button>\n  <Button category=\"success\" variation=\"inversed\">\n    My button\n  </Button>\n  <Button category=\"warning\" variation=\"inversed\" round>\n    My button\n  </Button>\n</Spacer>"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Spacer__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    category: "primary"
+  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    category: "danger",
+    round: true
+  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    category: "success",
+    variation: "inversed"
+  }, "My button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    category: "warning",
+    variation: "inversed",
+    round: true
+  }, "My button"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h2",
+    components: components,
+    props: {
+      "id": "props"
+    }
+  }, "Props"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Nullam mattis, diam ut convallis dictum, ipsum tellus tincidunt enim, non elementum libero arcu vel orci. Nam bibendum venenatis mi, in pulvinar lectus lobortis fermentum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h3",
+    components: components,
+    props: {
+      "id": "table"
+    }
+  }, "Table"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Phasellus in consectetur leo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["PropsTable"], {
+    component: _components_Button__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "h3",
+    components: components,
+    props: {
+      "id": "knobs"
+    }
+  }, "Knobs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_tag__WEBPACK_IMPORTED_MODULE_1__["MDXTag"], {
+    name: "p",
+    components: components
+  }, "Phasellus in consectetur leo. Curabitur vel turpis porta, faucibus ante a, aliquam nisi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_display_window_lib_components__WEBPACK_IMPORTED_MODULE_2__["Knobs"], {
+    component: _components_Button__WEBPACK_IMPORTED_MODULE_4__["default"],
+    defaults: {
+      category: 'primary'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], null, "My button")));
+});
 
 /***/ }),
 
@@ -1897,7 +1882,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Page = __webpack_require__(/*! ../drawbotics-button/docs/button.mdx */ "../drawbotics-button/docs/button.mdx").default;
+var Page = __webpack_require__(/*! ../drawbotics-button/src/docs/button.mdx */ "../drawbotics-button/src/docs/button.mdx").default;
 
 react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_3__["default"], {
   page: Page
