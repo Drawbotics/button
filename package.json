@@ -30,6 +30,7 @@
     "babel-loader": "8.0.0-beta.4",
     "better-webpack-progress": "1.0.2",
     "react": "16.4.2",
+    "react-display-window": "^1.0.1",
     "react-dom": "16.4.2",
     "react-helmet": "^5.2.0",
     "rimraf": "2.6.2",
