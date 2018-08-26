@@ -1,0 +1,46 @@
+{
+  "name": "@drawbotics/file-uploader",
+  "version": "1.1.2",
+  "description": "Small React component to upload files using active storage",
+  "license": "UNLICENSED",
+  "main": "dist/DrawboticsFileUploader.js",
+  "module": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Drawbotics/drawbotics-file-uploader"
+  },
+  "scripts": {
+    "clean": "rimraf dist && rimraf lib",
+    "build:umd": "NODE_ENV=production webpack --config webpack.config.js",
+    "build:module": "NODE_ENV=production babel src --out-dir lib/",
+    "build": "npm run clean && npm run build:umd && npm run build:module",
+    "docs:serve": "rdw serve docs/button.mdx",
+    "docs:build": "rdw build docs/button.mdx --out-dir static/",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.52",
+    "@babel/core": "7.0.0-beta.52",
+    "@babel/preset-env": "7.0.0-beta.52",
+    "@babel/preset-react": "7.0.0-beta.52",
+    "babel-loader": "8.0.0-beta.4",
+    "better-webpack-progress": "1.0.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-helmet": "^5.2.0",
+    "rimraf": "2.6.2",
+    "webpack": "4.16.3",
+    "webpack-cli": "3.1.0",
+    "webpack-stylish": "0.1.8"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^0.15.0-2",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2"
+  }
+}

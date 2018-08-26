@@ -1,0 +1,76 @@
+import { PlayGround, Knobs, PropsTable, Toc } from 'react-display-window/lib/components';
+import { Helmet } from 'react-helmet';
+
+import Button from '../src';
+import Spacer from './Spacer';
+
+
+<Helmet>
+  <title>Drawbotics Button</title>
+  <link href="https://s3-eu-west-1.amazonaws.com/drawbotics-cdn/ittsu/dev/ittsu.styles.css" rel="stylesheet" />
+</Helmet>
+
+
+# Drawbotics Button
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus tempus ipsum, a porttitor ipsum interdum non. Nam erat libero, molestie a ligula sit amet, maximus dictum est. Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius. Sed posuere accumsan vestibulum. In hac habitasse platea dictumst. Nunc hendrerit nisi a arcu consectetur finibus.
+
+
+## Table Of Content
+
+<Toc />
+
+## Installation
+
+Aliquam quis tempor neque. Donec laoreet erat eget quam euismod varius.
+
+```bash
+$ npm install @drawbotics/button
+```
+
+
+## Example
+
+Duis scelerisque, massa nec iaculis malesuada, ligula arcu tempus nulla, nec ultricies massa enim ac risus. Curabitur rhoncus ipsum vel est posuere, finibus mattis neque vulputate.
+
+<PlayGround>
+  <Spacer>
+    <Button category="primary">
+      My button
+    </Button>
+    <Button category="danger" round>
+      My button
+    </Button>
+    <Button category="success" variation="inversed">
+      My button
+    </Button>
+    <Button category="warning" variation="inversed" round>
+      My button
+    </Button>
+  </Spacer>
+</PlayGround>
+
+## Props
+
+Nullam mattis, diam ut convallis dictum, ipsum tellus tincidunt enim, non elementum libero arcu vel orci. Nam bibendum venenatis mi, in pulvinar lectus lobortis fermentum.
+
+
+### Table
+
+Phasellus in consectetur leo.
+
+<PropsTable component={Button} />
+
+
+### Knobs
+
+Phasellus in consectetur leo. Curabitur vel turpis porta, faucibus ante a, aliquam nisi.
+
+<Knobs
+  component={Button}
+  defaults={{ category: 'primary' }}>
+  <Button>
+    My button
+  </Button>
+</Knobs>
